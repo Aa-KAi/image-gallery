@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI生成图片展示 - Kai的助手</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+min-height: 100vh;
+padding: 40px 20px;
+}
+
+.container {
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.header {
+text-align: center;
+color: white;
+margin-bottom: 50px;
+}
+
+.header h1 {
+font-size: 2.5em;
+margin-bottom: 10px;
+text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.header p {
+font-size: 1.2em;
+opacity: 0.9;
+}
+
+.image-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+gap: 30px;
+padding: 20px;
+}
+
+.image-card {
+background: white;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.image-card img {
+width: 100%;
+height: 240px;
+object-fit: cover;
+display: block;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card-title {
+font-size: 1.1em;
+font-weight: 600;
+color: #333;
+margin-bottom: 10px;
+}
+
+.card-prompt {
+font-size: 0.9em;
+color: #666;
+line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+.image-grid {
+grid-template-columns: 1fr;
+}
+
+.header h1 {
+font-size: 2em;
+}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🎨 AI 生成图片展示</h1>
+<p>使用 AI 文生图技术创作的精美图片</p>
+</div>
+
+<div class="image-grid">
+<!-- 示例图片卡片 -->
+<div class="image-card">
+<img src="https://via.placeholder.com/400x300/667eea/ffffff?text=Image+1" alt="AI生成图片">
+<div class="card-content">
+<div class="card-title">星空下的城堡</div>
+<div class="card-prompt">一座漂浮在星空中的梦幻城堡，周围环绕着璀璨的星河，魔幻现实主义风格</div>
+</div>
+</div>
+
+<div class="image-card">
+<img src="https://via.placeholder.com/400x300/764ba2/ffffff?text=Image+2" alt="AI生成图片">
+<div class="card-content">
+<div class="card-title">森林中的精灵</div>
+<div class="card-prompt">月光下，一位精灵在神秘的森林中起舞，周围萤火虫飞舞</div>
+</div>
+</div>
+
+<div class="image-card">
+<img src="https://via.placeholder.com/400x300/f093fb/ffffff?text=Image+3" alt="AI生成图片">
+<div class="card-content">
+<div class="card-title">赛博朋克城市</div>
+<div class="card-prompt">未来主义城市，霓虹灯闪烁，飞车穿梭，高科技感十足</div>
+</div>
+</div>
+
+<div class="image-card">
+<img src="https://via.placeholder.com/400x300/4facfe/ffffff?text=Image+4" alt="AI生成图片">
+<div class="card-content">
